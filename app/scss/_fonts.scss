@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Heebo-Black';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Heebo-Black'),
+  url('../fonts/Heebo-Black.woff2') format('woff2'),
+  url('../fonts/Heebo-Black.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo-ExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  src: local('Heebo-ExtraBold'),
+  url('../fonts/Heebo-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Heebo-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Heebo-Bold'),
+  url('../fonts/Heebo-Bold.woff2') format('woff2'),
+  url('../fonts/Heebo-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Heebo-Regular'),
+  url('../fonts/Heebo-Regular.woff2') format('woff2'),
+  url('../fonts/Heebo-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Heebo-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Heebo-Regular'),
+  url('../fonts/Heebo-Light.woff2') format('woff2'),
+  url('../fonts/Heebo-Light.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EncodeSansSC-Black';
+  font-weight: 900;
+  font-style: normal;
+  src: local('EncodeSansSC-Black'),
+  url('../fonts/EncodeSansSC-Black.woff2') format('woff2'),
+  url('../fonts/EncodeSansSC-Black.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EncodeSansSC-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('EncodeSansSC-Black'),
+  url('../fonts/EncodeSansSC-Bold.woff2') format('woff2'),
+  url('../fonts/EncodeSansSC-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EncodeSansSC-Thin';
+  font-weight: 100;
+  font-style: normal;
+  src: local('EncodeSansSC-Thin'),
+  url('../fonts/EncodeSansSC-Thin.woff2') format('woff2'),
+  url('../fonts/EncodeSansSC-Thin.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,199 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header {
+  padding: 60px 0;
+
+  &__list {
+    display: flex;
+    gap: 105px;
+  }
+
+  &__item {
+    @extend %encodeSansSC-100;
+    font-size: 12px;
+    color: black;
+  }
+}
+
+.top {
+  padding-bottom: 94px;
+  &__title {
+    @extend %encodeSansSC-900;
+    color: $accent;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+}
+
+.teams {
+  padding-top: 130px;
+  background-image: url('../images/src/teams-bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    max-width: 490px;
+    width: 100%;
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      color: white;
+      max-width: 432px;
+
+      .teams__item-title {
+        letter-spacing: 0.15em;
+      }
+
+      .teams__info-item,
+      .teams__skill-item {
+        color: inherit;
+      }
+
+      .teams__skill-item::after {
+        background: #fff;
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 17px;
+    @extend %encodeSansSC-700;
+    font-size: 32px;
+  }
+
+
+  &__item-subtitle {
+    text-align: center;
+    @extend %heebo-700;
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 75px 0 63px;
+    padding: 0 60px 0 25px;
+    width: 100%;
+  }
+
+  &__info-item {
+    display: flex;
+    justify-content: space-between;
+    color: #24285B;
+    @extend %heebo-300;
+    font-size: 24px;
+
+    span {
+      @extend %heebo-700;
+    }
+
+  }
+
+  &__skills {
+    width: 100%;
+  }
+
+  &__skills-text {
+    @extend %heebo-700;
+    font-size: 28px;
+  }
+
+  &__skill-list {
+    display: flex;
+    margin-top: 16px;
+    padding-left: 25px;
+    gap: 60px;
+  }
+
+  &__skill-item {
+    color: #24285B;
+    @extend %heebo-400;
+    font-size: 24px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #24285B;
+      right: -28px;
+      top: 15px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.we-can {
+  padding: 264px 0 157px;
+  &__title {
+    font-size: 32px;
+    letter-spacing: 0.4em;
+    color: white;
+    text-align: left;
+    @extend %encodeSansSC-900;
+  }
+  &__title--accent {
+    text-align: right;
+    color: $accent;
+    margin-bottom: 135px;
+  }
+}
+
+.portfolio {
+  padding-top: 130px;
+  background-image: url('../images/src/portfolio-bg.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 90px;
+    padding: 0 44px;
+  }
+  &__item {
+    display: inline-block;
+    cursor: pointer;
+    img {
+      border-radius: 19px;
+      filter: drop-shadow(10px 14px 18px rgba(0, 0, 0, 0.25));
+      transition: all .3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__item-title {
+    margin-top: 9px;
+    text-align: center;
+    color: #06050B;
+    font-size: 36px;
+    @extend %heebo-800;
+  }
+}
+
+@import 'media';
